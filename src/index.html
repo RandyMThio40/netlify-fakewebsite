@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" 
+            type="image/png"
+            href="jad5vd6rks171.jpeg"    
+        />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>fake-website</title>
+        <script defer src="form.js"></script>
+        <style>
+            html,body{
+                width:100%;
+                height:100%;
+            }
+            *{
+                box-sizing:border-box;
+                margin:0;
+                padding:0;
+            }
+            .landing-page{
+                width:100vw;
+                height:max(100vh,700px);
+                /* background-color:black;ls
+                 */
+                color:white;
+                overflow: scroll;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .input-wrapper{
+                width:max-content;
+                display: inline;
+            }
+            #video{
+                width:max(70vw,500px);
+                height:400px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="landing-page"> 
+            <div class="input-wrapper">
+                <label for="videoInput">select a video (.mp4)</label>
+                <input id="videoInput"  name="videoInput" type="file" accept="video/mp4"/>
+            </div>
+            <video src="movie.mp4" id="video" width="400" height="300" controls style="display: block;">
+                
+            </video>
+
+
+        </div>
+    </body>
+</html>
